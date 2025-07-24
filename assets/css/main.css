@@ -1398,6 +1398,35 @@ input, select, textarea {
 					margin-left: 50%;
 				}
 
+				/* Center and shrink project buttons in mobile view */
+				#project .button, .project-card .button, .card-body .button {
+					display: block;
+					margin-left: auto !important;
+					margin-right: auto !important;
+					max-width: 120px;
+					width: 90%;
+					padding: 0.5em 0.7em;
+					font-size: 0.6em;
+					line-height: 1.2;
+					border-radius: 2em;
+					text-align: center;
+					white-space: normal;
+					word-break: break-word;
+				}
+
+
+				/* Ensure project actions are flex and centered in mobile */
+				#project ul.actions,
+				.project-card ul.actions,
+				.card-body ul.actions {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding-left: 0;
+				}
+
+
+
 				.row > .col-7-small {
 					width: 58.33333%;
 				}

@@ -344,25 +344,27 @@ p {
     display: flex;
   }
 
-  /* Hide the original header on mobile */
+  /* Hide the original header on mobile unless menu is open */
   #header {
     display: none;
   }
-
-  /* Create a mobile navigation overlay */
   #header.mobile-active {
     display: flex !important;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50vw;
+    max-width: 280px;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.95);
+    background: transparent;
     z-index: 10001;
-    padding: 80px 30px 30px 30px;
+    padding: 0;
     align-items: flex-start;
     justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 0;
   }
+
 
   #header.mobile-active .header {
     min-height: auto;
@@ -402,15 +404,19 @@ p {
   }
 
   #header.mobile-active .nav-list ul li a {
-    font-size: 2.5rem !important;
+    font-size: 1.1rem !important;
     color: white !important;
-    padding: 20px 0 !important;
+    padding: 10px 0 !important;
     display: block !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: left;
-    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 1.5em;
+    background: rgba(255,255,255,0.04);
     text-decoration: none;
     font-weight: bold;
+}
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
