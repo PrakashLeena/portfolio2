@@ -21,6 +21,13 @@
 
 <body class="is-preload">
 
+	<!-- Mobile Menu Button -->
+	<div id="mobile-menu-btn" class="mobile-menu-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
@@ -95,6 +102,41 @@
 				window.dispatchEvent(new Event("resize"));
 			};
 		</script>
+
+		<!-- Mobile Menu Script -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+				const sidebar = document.getElementById('sidebar');
+				const body = document.body;
+
+				mobileMenuBtn.addEventListener('click', function() {
+					sidebar.classList.toggle('mobile-active');
+					body.classList.toggle('mobile-menu-open');
+					mobileMenuBtn.classList.toggle('active');
+				});
+
+				// Close menu when clicking on a link
+				const sidebarLinks = sidebar.querySelectorAll('a');
+				sidebarLinks.forEach(link => {
+					link.addEventListener('click', function() {
+						sidebar.classList.remove('mobile-active');
+						body.classList.remove('mobile-menu-open');
+						mobileMenuBtn.classList.remove('active');
+					});
+				});
+
+				// Close menu when clicking outside
+				document.addEventListener('click', function(e) {
+					if (!sidebar.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+						sidebar.classList.remove('mobile-active');
+						body.classList.remove('mobile-menu-open');
+						mobileMenuBtn.classList.remove('active');
+					}
+				});
+			});
+		</script>
+
 		<!-- One -->
 		<section id="one" class="wrapper style2 spotlights">
 			<section>
@@ -179,9 +221,6 @@
 						<p>AWS</p>
 					</section>
 				</div>
-				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
-				</ul>
 			</div>
 		</section>
 

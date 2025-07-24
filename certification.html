@@ -11,6 +11,13 @@
 </head>
 
 <body>
+    <!-- Mobile Menu Button -->
+    <div id="mobile-menu-btn" class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <!-- Header -->
 
     <section id="header">
@@ -66,6 +73,40 @@
             </div>
         </div>
     </section>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const header = document.getElementById('header');
+            const body = document.body;
+
+            mobileMenuBtn.addEventListener('click', function() {
+                header.classList.toggle('mobile-active');
+                body.classList.toggle('mobile-menu-open');
+                mobileMenuBtn.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            const navLinks = header.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    header.classList.remove('mobile-active');
+                    body.classList.remove('mobile-menu-open');
+                    mobileMenuBtn.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!header.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                    header.classList.remove('mobile-active');
+                    body.classList.remove('mobile-menu-open');
+                    mobileMenuBtn.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
