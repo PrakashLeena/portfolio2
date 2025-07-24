@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.waves.min.js"></script>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Jane Temcious - Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
+					<li><a href="#one">Work Experiences</a></li>
+					<li><a href="#two">Technical Skills</a></li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="certification.html">Courses & Bootcamps</a></li>
+					<li><a href="#three">Get in touch</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<div class="name-with-image">
+					<div class="name-content">
+						<h1>Hi, <span class="highlight-text">I'm Jane Temcious,</span></h1>
+					</div>
+					<div class="image-content">
+						<img src="images/bg.jpg" alt="Jane Temcious" class="profile-image-large" />
+					</div>
+				</div>
+				<h2 class="welcome-subtitle">Welcome to our Portfolio</h2>
+				<p class="welcome-description">A highly motivated AI Engineer with experience in<span
+						class="skill-highlight"> Machine Learning, Deep Learning,
+						Generative AI,
+						Edge
+						AI, Computer vision</span>, and <span class="skill-highlight">Embedded Systems</span>. A quick
+					learner, effective
+					team player, and skilled
+					problem
+					solver, dedicated to using advanced technologies to provide innovative solutions for real-world
+					challenges.</p>
+
+				<h2>Education</h2>
+				<h3>Honours Degree of Bachelor of the Science of Engineering <span>Moratuwa, Sri Lanka</span></h3>
+				<p>Specialized in Electrical Engineering <span>CGPA: 3.69/4.2</span> <span>October 2018 – June
+						2023</span></p>
+				<ul class="actions">
+					<li><a href="#one" class="button scrolly">Learn more</a></li>
+				</ul>
+			</div>
+		</section>
+
+
+
+
+		<script>
+			const effect = VANTA.WAVES({
+				el: "#intro",
+				mouseControls: true,
+				touchControls: true,
+				minHeight: 400.0,
+				minWidth: 400.0,
+				scale: 1.0,
+				scaleMobile: 1.0,
+				waveHeight: 20.0,
+				color: 0x50409a,
+				waveSpeed: 0.5,
+			});
+			//horizon scrollbar fix... sort of.
+			window.onload = function () {
+				window.dispatchEvent(new Event("resize"));
+			};
+		</script>
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>AI Engineer (Remote)</h2>
+						<p>ChiefDX,400 Orchard Road, Singapore</p>
+						<p>Jan. 2025 – present</p>
+						<ul class="actions">
+							<li><a href="ex1.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Machine Learning Engineer (Remote)</h2>
+						<p>PromiseQ GmbH, Berlin, Germany</p>
+						<p>Aug. 2024 – Jan. 2025</p>
+						<ul class="actions">
+							<li><a href="ex2.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Electronic Engineer (Onsite)</h2>
+						<p>CodeGen International (Pvt) Ltd, Colombo, Sri Lanka</p>
+						<p>July 2023 – Aug.2024</p>
+						<ul class="actions">
+							<li><a href="ex3.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Technical Skills</h2>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>Programming Languages</h3>
+						<p>C/C++, Python, CUDA, MATLAB</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-lock"></span>
+						<h3>ML frameworks & tools</h3>
+						<p>PyTorch, Tensorflow, LangChain, LangGraph, Vector Databases (Pinecone)</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-cog"></span>
+						<h3>Multimodal models</h3>
+						<p>CLIP, LLaVA.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-desktop"></span>
+						<h3>Deep Learning Architectures</h3>
+						<p>CNNs, GANs, Transformers.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-link"></span>
+						<h3>Deployment & Optimization Tools</h3>
+						<p>TensorRT, ONNX Runtime, Docker, Kubernetes</p>
+					</section>
+					<section>
+						<span class="icon major fa-gem"></span>
+						<h3>AI Edge Devices</h3>
+						<p>NVIDIA Jetson Series, Raspberry Pi, ARM-based STM32</p>
+					</section>
+					<section>
+						<span class="icon major fa-gem"></span>
+						<h3>Cloud Platform</h3>
+						<p>AWS</p>
+					</section>
+				</div>
+				<ul class="actions">
+					<li><a href="generic.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</section>
+
+    <!-- creating Publications -->
+		<section id="two-1" class="wrapper style2 fade-up">
+			<div class="inner">
+				<h2>Publications</h2>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>[1] Brain-Controlled Wheelchair Navigation Using Visual Perception in Simulated Indoor
+							Environments</h3>
+						<p>Thanabalasingam A., Fernando D.J.T., Mahendran S., Jayasekara A.G.B.P. and Gopura R.A.R.C.,
+							2024,
+							December. Brain-Controlled Wheelchair Navigation Using Visual Perception in Simulated Indoor
+							Environments. In
+							2024 4th International Conference on Electrical Engineering (EECon) (pp. 101-106). IEEE.</p>
+					</section>
+				</div>
+				<ul class="actions">
+					<li><a href="https://ieeexplore.ieee.org/document/10841863" class="button">Paper-2024</a></li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!-- creating Honours & Awards -->
+
+		<section id="two-2" class="wrapper style2 fade-up">
+			<div class="inner">
+				<h2>Honours & Awards</h2>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>The Best Paper Award in the Robotics and Intelligent Systems track. <span>Dec 2024</span></h3>
+						<p>4th International Conference on Electrical Engineering 2024 (EECON2024)</p>
+					</section>
+
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>ENG. E W KARUNARATNA AWARD – 2022 / 2023</h3>
+						<p>Best Undergraduate Project In Electrical Engineering</p>
+					</section>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- creating References -->
+
+		<section id="two-3" class="wrapper style4 fade-up">
+			<div class="inner">
+				<h2>References</h2>
+				<div class="features">
+					<div>
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>Dr. V. Logeeshan, Ph.D. (North Dakota State University, USA), B.Sc. Eng (University of Peradeniya)</h3>
+						<p>Senior Lecturer, Department of Electrical Engineering, University of Moratuwa, Sri Lanka</p>
+			<div>
+				<ul class="actions">
+					<li><a href="logeeshanv@uom.lk" class="button">Email</a></li>
+					<li><a href="https://uom.lk/staff/Logeeshan.V" class="button">Logeeshan</a></li>
+					<li><a href="#" class="button"> <span>Mobile</span>+9470 5976364</a></li>
+				</ul>
+			</div>
+			
+					</section>
+			</div>
+			<div>		
+
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>Prof.A.G.B.P. Jayasekara, Ph.D. (Saga University, Japan), B.Sc. Eng, M.Sc (University of Moratuwa)</h3>
+						<p>Professor, Department of Electrical Engineering, University of Moratuwa, Sri Lanka</p>
+			<div>
+				<ul class="actions">
+					<li><a href="buddhikaj@uom.lk" class="button">Email</a></li>
+					<li><a href="https://uom.lk/staff/Jayasekara.AGBP" class="button">Buddhika Jayasekara</a></li>
+					<li><a href="#" class="button"> <span>Mobile</span>+94719800077</a></li>
+				</ul>
+			</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Get in touch</h2>
+				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+					malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
+					imperdiet est velit quis lorem.</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><a href="" class="button submit">Send Message</a></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Address</h3>
+								<span>WARD NO.06 VANKALAI,<br />
+									MANNAR<br />
+									SRI LANKA</span>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<a href="#">temciousf@gmail.com</a>
+							</li>
+							<li>
+								<h3>Phone</h3>
+								<span>+94-769396149</span>
+							</li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
+									</li>
+									<li><a href="#" class="icon brands fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="https://linkedin.com/in/temcious/"
+											class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
