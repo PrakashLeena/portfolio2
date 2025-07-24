@@ -4359,7 +4359,7 @@ input, select, textarea {
 	}
 	
 	#intro .inner {
-		padding: 2.5rem 1.5rem;
+		padding: 1rem 0.5rem;
 	}
 	
 	/* Enhanced section spacing */
@@ -4420,12 +4420,32 @@ input, select, textarea {
 	}
 	
 	#intro .inner {
-		padding: 2rem 1rem;
+		padding: 1rem 0.5rem !important;
+	}
+	
+	/* Additional mobile gap fixes */
+	body {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	#wrapper {
+		margin: 0 !important;
+		padding: 0 !important;
 	}
 	
 	/* Enhanced mobile navigation */
 	#sidebar {
 		padding: 2rem 1.5rem 0.5rem 1.5rem;
+	}
+	
+	/* Reduce gap between sidebar navigation buttons on mobile */
+	#sidebar nav > ul > li {
+		margin: 0.5em 0 0 0;
+	}
+	
+	#sidebar nav > ul > li:first-child {
+		margin: 0;
 	}
 	
 	/* Better mobile section spacing */
